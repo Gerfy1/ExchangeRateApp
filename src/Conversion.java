@@ -1,8 +1,10 @@
-public record Conversion(double conversion_result) {
+public record Conversion(double conversion_result, String base_code,String target_code) {
     @Override
     public String toString() {
-        return "[Conversion]\n" +
-                "Conversion Result: " + conversion_result +
-                ' ';
+        return "[Conversion]" +
+                "Conversion result:" + conversion_result +
+                "In: (De)" + base_code + '\'' +
+                "For: (Para)" + target_code + '\'' +
+                '}';
     }
 }
