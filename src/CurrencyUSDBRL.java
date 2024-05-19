@@ -8,7 +8,7 @@ import java.net.http.HttpResponse;
 public class CurrencyUSDBRL {
 
     public Conversion CurrencyUSDBRL(double currencyValueUSD) {
-        URI apiBRUSD = URI.create("https://v6.exchangerate-api.com/v6/3dea353e5ce7e0cbd8fe6540/pair/USD/BRL/"+ currencyValueUSD + ".json");
+        URI apiBRUSD = URI.create("https://v6.exchangerate-api.com/v6/3dea353e5ce7e0cbd8fe6540/pair/USD/BRL/"+ currencyValueUSD);
         HttpRequest request = HttpRequest.newBuilder(apiBRUSD).build();
         try {
             HttpResponse<String> response = HttpClient
