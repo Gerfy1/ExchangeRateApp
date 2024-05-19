@@ -12,7 +12,7 @@ public class Main {
         System.out.println("****************************************\n            Exchange v0.1 \n****************************************");
 
         while (true) {
-            System.out.println("Enter your option number:\n1: BRL to > USD\n2: USD to > BRL\n3: BRL to > AUD\n4: AUD to > BRL\n5: EUR to > USD\n6: USD to > EUR");
+            System.out.println("Enter your option number:\n1: BRL to > USD\n2: USD to > BRL\n3: BRL to > AUD\n4: AUD to > BRL\n5: EUR to > USD\n6: USD to > EUR\n7: to Exit");
             try {
                 int option = sc.nextInt();
                 switch (option) {
