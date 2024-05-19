@@ -1,13 +1,15 @@
 EN: 
-#The "Exchange Rate API" application is a challenge proposed by Oracle ONE.
-###he application uses the Exchange API.
-###At the moment, the available conversions are:
+**The "Exchange Rate API" application is a challenge proposed by Oracle ONE.**
+he application uses the Exchange API.
+At the moment, the available conversions are:
+```
 BRL > USD
 USD > BRL
 BRL > AUD
 AUD > BRL
 EUR > USD
 USD > EUR
+```
 
 You choose your option using the numbers given at the start of the application.
 Then enter the amount you want.
