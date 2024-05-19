@@ -7,15 +7,14 @@ import java.net.http.HttpResponse;
 
 public class CurrencyBRLAUD {
     public Conversion CurrencyBRLAUD(double currencyValueAUD) {
-        URI apiBRUSD = URI.create("https://v6.exchangerate-api.com/v6/3dea353e5ce7e0cbd8fe6540/pair/BRL/AUD/" + currencyValueAUD);
-        HttpRequest request = HttpRequest.newBuilder(apiBRUSD).build();
+        URI apiLink = URI.create("https://v6.exchangerate-api.com/v6/3dea353e5ce7e0cbd8fe6540/pair/BRL/AUD/" + currencyValueAUD);
+        HttpRequest request = HttpRequest.newBuilder(apiLink).build();
         try {
             HttpResponse<String> response = HttpClient
                     .newHttpClient().send(request, HttpResponse.BodyHandlers.ofString());
             return new Gson().fromJson(response.body(), Conversion.class);
         } catch (Exception e) {
-            System.out.println("Não encontrado!");
-            System.out.println("Verifique se o valor digitado está correto!");
+            System.out.println("Not found!\nCheck that the value entered is correct!");
         }
         return null;
     }

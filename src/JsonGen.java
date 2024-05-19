@@ -9,8 +9,8 @@ public class JsonGen {
     public void generateJson(List<Conversion> conversions) throws IOException {
         Gson gson = new GsonBuilder()
                 .setPrettyPrinting().create();
-        FileWriter register = new FileWriter("register.json");
-        register.write(gson.toJson(conversions));
-        register.close();
+        FileWriter registerConversion = new FileWriter("registerConversion.json");
+        registerConversion.write(gson.toJson(conversions));
+        registerConversion.close();
     }
 }
