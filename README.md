@@ -26,7 +26,7 @@ The application creates a Json file with the value and currency information, for
 ```
 The application has been separated into methods, I'm a student and I welcome improvement tips.
 Thanks for reading!
-
+#
 PT:
 A aplicação "Exchange Rate API" é um desafio proposto pela Oracle ONE.
 A aplicação utiliza a API Exchange.
